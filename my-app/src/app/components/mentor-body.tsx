@@ -1,86 +1,42 @@
-import React from 'react'
+import { menteeData } from "../work/data";
 import '../css/styles1.css'
-import {Roboto} from "next/font/google";
+import React from 'react'
+
 export default function MentorBody() {
   return (
     <>
-    <div className='mentor-body'>
-       {/* Project Mentee*/ }
-        <div className='mentee-card'>
-        <div className='header'>
-            <div className='frame'>
-                <h6>Project Mentee</h6>
-                <div className='badge'>
-                    <span>1</span>
+    <div className="mentor-body">
+       {
+        menteeData.map((mentee)=>(
+            <div key={mentee.id} className="mentee-card">
+                {/* Header*/}
+                <div className="header" style={{backgroundColor:mentee.headerColor}}>
+                    <div className="frame">
+                        <h6>{mentee.title}</h6>
+                        <div className="badge">
+                            <span>{mentee.count}</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div className='content'>
-            <div className='quarter-text'>Current Quarter (Q3):</div>
-            <div className='card'>
-            <div className="rectangle"></div>
-            <div className="sub-content">
-                <div className="name">Ankita Shrivastava</div>
-                <div className="role">Project Manager</div>
-            </div>
+                {/* Content */}
+                <div className="content">
+                    <div className="quarter-text">
+                       Current Quarter ({mentee.quarter}):
+                    </div>
+                    <div className="card" style={{backgroundColor:mentee.cardBgColor}}>
+                        <div className="rectangle" style={{backgroundColor:mentee.rectangleColor}}></div>
+                        <div className="sub-content">
+                            <div className="name">{mentee.name}</div>
+                            <div className="role">{mentee.role}</div>
+                        </div>
 
-            </div>
- 
-        </div>
-        </div>
-      
-      {/* Skill Mentee */}
-      <div className='mentee-card'>
-        <div className='header'>
-            <div className='frame'>
-                <h6>Project Mentee</h6>
-                <div className='badge'>
-                    <span>1</span>
-                </div>
-            </div>
-        </div>
-
-        <div className='content'>
-            <div className='quarter-text'>Current Quarter (Q3):</div>
-            <div className='card'>
-            <div className="rectangle"></div>
-            <div className="sub-content">
-                <div className="name">Ankita Shrivastava</div>
-                <div className="role">Project Manager</div>
-            </div>
+                    </div>
+                </div>    
 
             </div>
- 
-        </div>
-        </div>
-
-        {/* Domain Mentee */}
-
-        <div className='mentee-card'>
-        <div className='header'>
-            <div className='frame'>
-                <h6>Project Mentee</h6>
-                <div className='badge'>
-                    <span>1</span>
-                </div>
-            </div>
-        </div>
-
-        <div className='content'>
-            <div className='quarter-text'>Current Quarter (Q3):</div>
-            <div className='card'>
-            <div className="rectangle"></div>
-            <div className="sub-content">
-                <div className="name">Ankita Shrivastava</div>
-                <div className="role">Project Manager</div>
-            </div>
-
-            </div>
- 
-        </div>
-        </div>
-
+        ))
+       } 
     </div>
     </>
   )

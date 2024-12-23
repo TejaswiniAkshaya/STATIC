@@ -1,144 +1,188 @@
-.mentor-body {
+.main-div{
+    width: 1300px;
+    height: 49px;
+    top: 100px;
+    left: 77px;
+    padding: 0px 36px;
     display: flex;
-    gap: 32px;
-    width: 1294px;
-    height: 724px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-bottom: 100px;
-}
-.mentee-card {
- 
-    width: 410px;
-    height: 724px;
-    border-radius: 8px;
-    border: 1px solid #828282;
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    width: 100%;
-    height: 68px;
-    padding: 12px 24px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #030080;
-    box-sizing: border-box;
-}
-
-.mentee-card:nth-child(1) .header {
-    background: #93D4EF;
-}
-
-.mentee-card:nth-child(2) .header {
-    background: #C5E1A5;
-
-}
-
-.mentee-card:nth-child(3) .header {
-    background: #D2B7FF;
-
-}
-
-.header .frame {
-    width: 211px;
-    display: flex;
-    gap: 8px;
     align-items: center;
+    opacity: 1;
+    color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+ .mentor-switcher{
+    width:824px;
+    height:49px;
+ }
+ .switcher-div{
+    width: 799px;
+    height: 49px;
+ }
+ .tabs{
+    width: 350px;
+    height: 49px;
+}
+.tab-group{
+    width: 350px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
 }
 
-.header .frame h6 {
-    font-size: 20px;
+
+.tab {
+    width: 175px;
+    height: 48px;
+    cursor: pointer;
+ }
+ .layer1{
+    width: 175px;
+    height: 48px;
+    padding: 0px 16px;
+ 
+}
+ .active-tab{
+    width: 175px;
+   height: 48px; 
+   cursor: pointer;
+ }
+  .active-tab .tab-components{
+    position: relative;
+  }
+  .active-tab .tab-components::after{
+    content: ""; 
+    position: absolute; 
+    bottom:-2px;
+    left:0;
+    width: 121px;
+    height: 3px;
+    background: #030080;
+    border-radius:7px ;
+  }
+  
+  .tab-components {
+    width: 124px;
+    height: 48px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 14px 0px; 
+    gap:1px;
+  }
+  .tab-components h5{
+    width: 104px;
+    height: 24px;
+    opacity: 0.6;
+ 
+    font-size: 14px; 
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0.15px;
-    color: #030080;
-}
-
-.header .badge {
-    width: 23px;
-    height: 23px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: black;
+  }
+  .tab-icon{
+    width: 13px;
+    height: 13px;
+    padding: 3px 3px 2px 3px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: #FFFFFF;
-}
+    border-radius: 100%;
 
-.header .badge span {
+  }
+  .tab-icon span{
     font-size: 11px;
     font-weight: 500;
+    line-height: 16px;
     letter-spacing: 0.5px;
-}
-
-.content {
-    width: 100%;
-    height: 656px;
-    padding-top: 16px;
-}
-
-.content .quarter-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #030080;
-    margin-left: 16px;
-    margin-bottom: 24px;
-}
-
-.card {
-    width: 378px;
-    height: 80px;
-    margin: 0 auto;
+    text-align: center;
+    width:8px ;
+    height: 16px;
+  }
+.frame-tab{
+    width: 240px;
+    height: 32px;
     display: flex;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid #CBCBCB;
-    background: #F3FAFD;
-}
-
-.card .rectangle {
-    width: 8.69px;
-    height: 80px;
- 
-}
-
-.mentee-card:nth-child(1) .content .card .rectangle{
-    background: #B4E1F4;
-}
-.mentee-card:nth-child(2) .content .card .rectangle{
-    background:#D7EAC0;
-}
-.mentee-card:nth-child(3) .content .card .rectangle{
-    background: #DFCDFF;
-}
-
-.mentee-card:nth-child(1) .content .card {
-    background: #F3FAFD;
-
-}
-.mentee-card:nth-child(2) .content .card{
-   background: #F8FBF5;
+    gap: 16px;
+    justify-content: flex-start;
     
 }
-.mentee-card:nth-child(3) .content .card {
- background: #FAF7FF;
+.filter-chip1{
+   width: 114px;
+   height: 32px;
+   background: #F2F2F2;
+   border-radius: 8px;
 
 }
-.card .sub-content {
-    margin-left: 16px;
+.filter-chip2{
+   width: 120px;
+   height: 32px;
+   background: #F2F2F2;
+   border-radius: 8px;
+   padding: 0px 8px 0px 16px;
+  
 }
-.card .sub-content .name {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #000;
+.state-layer1{
+   width: 114px;
+   height: 32px;  
+   
+   display: flex;
+   flex-direction: row;
+    gap: 8px;
+   align-items: center;
+   justify-content: flex-start;
+   padding-left: 16px;
+  
+ 
 }
-.card .sub-content .role {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #030080;
+.state-layer2{
+   width: 70px;
+   height: 32px;
+   padding-left: 16px;
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+   align-items: center;
+   justify-content: space-around;
+   justify-content: flex-start;
+   padding-left: 16px;
+  
+}
+.filter-select{
+ 
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.select-wrapper{
+   position: relative;
+}
+.select-wrapper::after{
+   content:'▼';
+   color: black;
+   position: absolute;
+   right:35px;
+   font-size: 12px;
+   
+}
+
+.select-wrapper1{
+   position: relative;
+}
+.select-wrapper1::after{
+   content:'▼';
+   color: black;
+   position: absolute;
+   right:30px;
+   font-size: 12px;
+ 
+   
 }

@@ -1,177 +1,109 @@
-.main-div{
-    width: 1300px;
-    height: 49px;
-    top: 100px;
-    left: 77px;
-    padding: 0px 36px;
+.mentor-body {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 1;
-    color: white;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
- }
- .mentor-switcher{
-    width:824px;
-    height:49px;
- }
- .switcher-div{
-    width: 799px;
-    height: 49px;
- }
- .tabs{
-    width: 350px;
-    height: 49px;
-  
+    gap: 32px;
+    width: 1294px;
+    height: 724px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+.mentee-card {
+ 
+    width: 410px;
+    height: 724px;
+    border-radius: 8px;
+    border: 1px solid #828282;
+    display: flex;
+    flex-direction: column;
+}
 
- }
- .tab-group{
-    width: 350px;
-    height: 48px;
+.header {
+    width: 100%;
+    height: 68px;
+    padding: 12px 24px;
     display: flex;
-    flex-direction: row;
-}
-.tab1,.tab2{
-   width: 175px;
-   height: 48px; 
-   
-}
-.tab-components1{
-   position: relative; 
-}
-.tab-components1::after{
-    content: ""; 
-    position: absolute; 
-    bottom:-2px;
-    left:0;
-    width: 121px;
-    height: 3px;
-    background: #030080;
-    border-radius:7px ;
-}
-.layer1{
-     width: 175px;
-     height: 48px;
-     padding: 0px 16px;
-  
-}
-.tab-components,.tab-components1 {
-    width: 124px;
-    height: 48px;
-    display: flex;
-    justify-content:flex-start;
     align-items: center;
-    padding-top: 14px 0px; 
-    
-     gap:1px;
- 
-  }
-  .tab-components h5,.tab-components1 h5{
-    width: 104px;
-    height: 24px;
-    opacity: 0.6;
- 
-    font-size: 14px; 
+    justify-content: space-between;
+    border-bottom: 1px solid #030080;
+    box-sizing: border-box;
+}
+
+
+.header .frame {
+    width: 211px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.header .frame h6 {
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: black;
- }
- .tab-icon1{
-    width: 13px;
-    height: 13px;
-    padding: 3px 3px 2px 3px;
-    opacity: 60%;
+    letter-spacing: 0.15px;
+    color: #030080;
+}
+
+.header .badge {
+    width: 23px;
+    height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
-    background-color: black;
-    }
-    .tab-icon2{
-        width: 13px;
-        height: 13px;
-        padding: 3px 3px 2px 3px;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-        background: #030080;
-    
-        }
-        .tab-icon1 span,.tab-icon2 span{
-           
-            font-size: 11px;
-            font-weight: 500;
-            line-height: 16px;
-            letter-spacing: 0.5px;
-            text-align: center;
-            width:8px ;
-            height: 16px;
-       }
-
-
-     .frame-tab{
-        width: 240px;
-        height: 32px;
-        display: flex;
-        gap: 16px;
-        justify-content: flex-start;
-        
-    }
-   .filter-chip1{
-       width: 114px;
-       height: 32px;
-       background: #F2F2F2;
-       border-radius: 8px;
-
-   }
-   .filter-chip2{
-       width: 120px;
-       height: 32px;
-       background: #F2F2F2;
-       border-radius: 8px;
-       padding: 0px 8px 0px 16px;
-   }
-   .state-layer1{
-       width: 114px;
-       height: 32px;  
-       
-       display: flex;
-       flex-direction: row;
-        gap: 8px;
-       align-items: center;
-       justify-content: flex-start;
-       padding-left: 16px;
-     
-   }
-   .state-layer2{
-       width: 70px;
-       height: 32px;
-       padding-left: 16px;
-       display: flex;
-       flex-direction: row;
-       gap: 8px;
-       align-items: center;
-       justify-content: space-around;
-       justify-content: flex-start;
-       padding-left: 16px;
-   }
-.text1,.text2{
-       font-family:Arial, sans-serif; 
-       font-size: 14px;
-       font-weight: 500;
-       line-height: 20px;
-       letter-spacing: 0.1px;
-       text-align: center;
-       text-decoration-skip-ink: none;
-       color: black;
+    border-radius: 50%;
+    background: #FFFFFF;
 }
-.icon1,.icon2{
-    width: 18px;
-    height: 18px;
-    padding: 0px 0px 4px 4px;
-    color: black;
+
+.header .badge span {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    width: 100%;
+    height: 656px;
+    padding-top: 16px;
+}
+
+.content .quarter-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #030080;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.card {
+    width: 378px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #CBCBCB;
+    background: #F3FAFD;
+}
+
+.card .rectangle {
+    width: 8.69px;
+    height: 80px;
+ 
+}
+
+.card .sub-content {
+    margin-left: 16px;
+}
+.card .sub-content .name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+}
+.card .sub-content .role {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #030080;
 }
