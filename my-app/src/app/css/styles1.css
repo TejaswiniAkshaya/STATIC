@@ -1,0 +1,144 @@
+.mentor-body {
+    display: flex;
+    gap: 32px;
+    width: 1294px;
+    height: 724px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+.mentee-card {
+ 
+    width: 410px;
+    height: 724px;
+    border-radius: 8px;
+    border: 1px solid #828282;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 68px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #030080;
+    box-sizing: border-box;
+}
+
+.mentee-card:nth-child(1) .header {
+    background: #93D4EF;
+}
+
+.mentee-card:nth-child(2) .header {
+    background: #C5E1A5;
+
+}
+
+.mentee-card:nth-child(3) .header {
+    background: #D2B7FF;
+
+}
+
+.header .frame {
+    width: 211px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.header .frame h6 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #030080;
+}
+
+.header .badge {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.header .badge span {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    width: 100%;
+    height: 656px;
+    padding-top: 16px;
+}
+
+.content .quarter-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #030080;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.card {
+    width: 378px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #CBCBCB;
+    background: #F3FAFD;
+}
+
+.card .rectangle {
+    width: 8.69px;
+    height: 80px;
+ 
+}
+
+.mentee-card:nth-child(1) .content .card .rectangle{
+    background: #B4E1F4;
+}
+.mentee-card:nth-child(2) .content .card .rectangle{
+    background:#D7EAC0;
+}
+.mentee-card:nth-child(3) .content .card .rectangle{
+    background: #DFCDFF;
+}
+
+.mentee-card:nth-child(1) .content .card {
+    background: #F3FAFD;
+
+}
+.mentee-card:nth-child(2) .content .card{
+   background: #F8FBF5;
+    
+}
+.mentee-card:nth-child(3) .content .card {
+ background: #FAF7FF;
+
+}
+.card .sub-content {
+    margin-left: 16px;
+}
+.card .sub-content .name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+}
+.card .sub-content .role {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #030080;
+}
